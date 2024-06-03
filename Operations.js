@@ -46,8 +46,22 @@
 
 // Logical operators
 // &&, ||, !
-// console.log(true && true);
+// console.log(true && true); // true
+// console.log(true && false); // false
+// console.log(false && false); // false
+// console.log(true || true); // true
+// console.log(true || false); // true
+// console.log(3 > 2 || true); // true
+
 
 // Bitwise operators
 // &, |, ^, ~, <<, >>
 // console.log(10 & 5); Output: 0 
+// 10 => 1010
+// 5  => 0101
+// 0  => 0000
+// console.log(10 | 5); Output: 15
+
+
+
+
