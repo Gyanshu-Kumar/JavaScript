@@ -86,3 +86,8 @@
 let nums = [4, 1, 5, 7, 19, 2]
 console.log(nums.indexOf(5)); // 2 // it will return the index of the element
 console.log(nums.indexOf(100)); // -1 // if the element is not present then it will return -1
+
+// Sorting the array
+let my_arr = [5,4,1,2,3]
+my_arr.sort()
+console.log(my_arr)
