@@ -47,3 +47,14 @@
 const country = "India";
 country = "USA"; // TypeError: Assignment to constant variable.
 console.log(country);
+
+
+// Difference between let and const
+// - let can be reassigned
+// - const can't be reassigned
+
+// - const can't be redeclared
+// - let can be redeclared
+
+// - let has block scope
+// - const has block scope

@@ -27,3 +27,6 @@ console.log(name)
 console.log(age)
 console.log(hobby) // undefined
 console.log(city) // New York
+
+
+
