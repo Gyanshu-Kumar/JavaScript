@@ -43,3 +43,5 @@
 // Fourth Example -> Reduce Method in Array - It takes a each element of array and perform some operation on it and return a single value
 const sum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce((curr, next) => curr+next)
 console.log(sum)
+
+
