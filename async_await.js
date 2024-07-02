@@ -16,18 +16,18 @@
 //    console.log("Last Line") 
 // }
 // printHelloAfterWait()
-console.log("Hello From The Beginning")
+console.log("Hello From The Beginning") // This will be printed first
 async function printHelloAfterWait(){
-    console.log("First Line")
+    console.log("First Line") // This will be printed second
 
     let data = new Promise((resolve, reject) => {
         setTimeout(()=>{
-            resolve("Hello Students")
+            resolve("Hello Students") // This will printed after 3 seconds
            },3000)
     })
     let result = await data // This will wait for the data to be completed
     console.log(result)
-   console.log("Last Line") 
+   console.log("Last Line") // This will printed lastly because it will wait for promise to complete then print
 }
 printHelloAfterWait()
-console.log("Hello From the End")
+console.log("Hello From the End") // This will Printed third 
