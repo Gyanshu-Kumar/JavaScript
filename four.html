@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyanshu Kumar</title>
+</head>
+<body style="background-color: #212121; color:#ffff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li); // Append the li to the ul
+
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+
+    function addOptiLanguage(langName){ // This function will add the language to the top of the list and it is better than the previous function
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage("C++")
+    addOptiLanguage("C")
+    addOptiLanguage("Ruby")
+
+    
+    //Edit
+    const SecondLang = document.querySelector("li:nth-child(2)");
+    //console.log(SecondLang) // Python
+   // SecondLang.innerHTML = "TypeScript"; // This will replace the innerHTML of the second li element with TypeScript
+   const newli = document.createElement('li');
+   newli.textContent = "Mojo"
+   SecondLang.replaceWith(newli)
+   // textContent vs innerHTML both are likely same 
+    // textContent is used to add element in html
+    // innerHTML alsomused to add element in html
+    // replaceChild and replaceWith are same
+    
+
+    // another approach of edit
+    const firstLang = document.querySelector("li:first-child") // it gives first element to modify it
+    firstLang.outerHTML = '<li>Typescript</li>'
+    //The innerHTML property captures the HTML contents of an element. In contrast, the outerHTML property captures the HTML that represents the element itself and its content. You can use these properties to read and write HTML content via the DOM.
+    
+    //remove
+    const lastLang = document.querySelector('li:last-child') // it gives li last child to access
+    lastLang.remove()
+</script>
+</html>
+
